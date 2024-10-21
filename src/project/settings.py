@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #my apps
+    'commando',
     'visits',
 ]
 
@@ -137,6 +138,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_BASE_DIR = BASE_DIR / 'staticfiles'
+STATICFILES_BASE_DIR.mkdir(exist_ok=True,parents=True)#	If the directory already exists, the exist_ok=True argument ensures no error is raised.
 STATICFILES_VENDOR_DIR = STATICFILES_BASE_DIR / 'vendors'
 
 #source(s) for python manage.py collectstatic  --> GET STATIC FILES
@@ -146,7 +148,8 @@ STATICFILES_DIRS = [
 
 # OUTPUT for python manage.py collectstatic  --> LOAD STATIC FILES
 #local cdn 
-STATIC_ROOT = BASE_DIR.parent / 'local-cdn'
+STATIC_ROOT = BASE_DIR / 'local-cdn'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
