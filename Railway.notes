@@ -1,3 +1,6 @@
 Railway -->
-          when add varibles :
+          -when add varibles :
                             - you should add without '' or "" to work 
+          - there some keys in django we need in build time : "" railway fails in build cuz this key ""
+                              - SECRET_KEY 
+                              
