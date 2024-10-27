@@ -6,3 +6,4 @@ dj-database-url
 requests
 whitenoise
 django-storages
+django-allauth[socialaccount]
