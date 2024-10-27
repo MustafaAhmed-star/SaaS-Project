@@ -82,7 +82,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-
+#Django allatuh
+ACCOUNT_AUTHENTICATION_METHOD = "username_email"
+ACCOUNT_EMAIL_REQUIRED=True
 # Provider specific settings
 SOCIALACCOUNT_PROVIDERS = {
 
