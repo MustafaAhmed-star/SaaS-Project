@@ -82,13 +82,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-#Django allatuh
-ACCOUNT_AUTHENTICATION_METHOD = "username_email"
-ACCOUNT_EMAIL_REQUIRED=True
-# Provider specific settings
-SOCIALACCOUNT_PROVIDERS = {
-
-    }
 
 ROOT_URLCONF = 'project.urls'
 
@@ -154,6 +147,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 #Django allauth
+LOGIN_REDIRECT_URL = '/'
+ACCOUNT_AUTHENTICATION_METHOD = "username_email"
+ACCOUNT_EMAIL_REQUIRED=True
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+# Provider specific settings
+SOCIALACCOUNT_PROVIDERS = {
+
+    }
+
 AUTHENTICATION_BACKENDS = [
     
     # Needed to login by username in Django admin, regardless of `allauth`

@@ -4,6 +4,8 @@
 
 
 {% block content %}
+    <strong><h1>{{request.user}}</h1></strong>
+    <strong><h1>{{request.session.session_key}}</h1></strong>
     <h1 >Hello Home</h1>
     <p>Welcome to the Home Page!</p>
     <strong><p>{{page_visit_count}} <span>no</span></p></strong>
