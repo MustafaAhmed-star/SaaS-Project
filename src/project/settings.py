@@ -65,6 +65,9 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.github',
+    "allauth_ui",
+    "widget_tweaks",
+    "slippers",
 
 ]
 
